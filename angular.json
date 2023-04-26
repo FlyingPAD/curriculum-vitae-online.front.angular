@@ -52,7 +52,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles_normalize.scss",
+              "src/styles.scss",
+              "src/styles_cv_central.scss",
+              "src/styles_cv_menu.scss"
             ],
             "scripts": []
           },

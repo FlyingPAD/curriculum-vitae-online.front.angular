@@ -1,0 +1,18 @@
+.toggle
+{
+    .toggle
+    {
+        display: block;
+    }
+}
+
+// -----------------------
+// - MEDIA QUERIES :
+
+@media (min-width: 1150px) 
+{
+    .toggle
+    {
+        display: none;
+    }
+}
