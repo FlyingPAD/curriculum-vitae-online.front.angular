@@ -1,13 +1,45 @@
 .toggle
 {
-    .toggle
+    position: sticky;
+    top: 0;
+
+    display: block;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+
+    #button
     {
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a
+        {
+            display: block;
+            width: 125px;
+            margin: 10px;
+            padding: 9px;
+
+            border: 1px solid #6b5240;  
+            border-radius: 5px;
+            background-color: #6b5240;          
+
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color:#ffffff;
+        }
+        a:hover
+        {
+            background-color: rgb(255, 255, 255);
+            color:#6b5240;
+            transition-duration: 500ms;
+            cursor: pointer;
+        }
     }
 }
-
-// -----------------------
-// - MEDIA QUERIES :
 
 @media (min-width: 1150px) 
 {

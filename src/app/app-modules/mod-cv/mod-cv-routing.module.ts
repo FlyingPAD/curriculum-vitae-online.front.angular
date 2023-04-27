@@ -6,6 +6,7 @@ import { CvSkillsHardComponent } from './cv-pages/cv-skills-hard/cv-skills-hard.
 import { CvSkillsSoftComponent } from './cv-pages/cv-skills-soft/cv-skills-soft.component';
 import { CvProjectsComponent } from './cv-pages/cv-projects/cv-projects.component';
 import { CvExperienceComponent } from './cv-pages/cv-experience/cv-experience.component';
+import { NotFoundComponent } from './cv-pages/not-found/not-found.component';
 
 const routes: Routes = 
 [
@@ -19,7 +20,7 @@ const routes: Routes =
 
   { path : 'projects', component : CvProjectsComponent },
 
-  { path : 'not-found', component : CvSkillsSoftComponent }
+  { path : 'not-found', component : NotFoundComponent }
 ];
 
 @NgModule({
