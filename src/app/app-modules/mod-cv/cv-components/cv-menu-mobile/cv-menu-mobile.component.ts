@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { CvMenuService } from '../../cv-services/cv-menu.service';
 
 @Component({
@@ -8,5 +8,24 @@ import { CvMenuService } from '../../cv-services/cv-menu.service';
 })
 export class CvMenuMobileComponent 
 {
-  constructor(public menuService : CvMenuService) {}
+  // Properties :
+
+  height : number
+
+  // Constructor :
+
+  constructor(public menuService : CvMenuService)
+  {
+    this.height = 0
+  }
+
+  // Methods
+
+  @HostListener('window:scroll', [])
+  onScroll() 
+  {
+    console.log(window.scrollY)
+
+    this.height = window.scrollY
+  }
 }
