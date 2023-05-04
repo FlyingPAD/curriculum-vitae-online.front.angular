@@ -1,4 +1,4 @@
-<div id="cv-menu-mobile" [ngClass]="menuService.menuIsActive === true ? 'cv-menu-mobile-active' : 'cv-menu-mobile-hidden' " [ngStyle]="{'top': height + 15 + 'px', 'scroll' : 'hidden'}">
+<div id="cv-menu-mobile" [ngClass]="menuService.menuIsActive === true ? 'cv-menu-mobile-active' : 'cv-menu-mobile-hidden' " [ngStyle]="{'top': topPosition + 'px'}">
     <div id="menu_content_common">
         <img src="../../../../../assets/app_logos/logo_fp_03.png" (click)="menuService.menuTrigger()"/>
         <p>Tony's Resume</p>
@@ -9,18 +9,18 @@
             <a routerLink="/training" (click)="menuService.menuTrigger()">Training</a>
             <a routerLink="/experience" (click)="menuService.menuTrigger()">Experience</a>
         </div>
-        <!-- <div class="box_buttons">
+        <div class="box_buttons">
             <a routerLink="/soft-skills" (click)="menuService.menuTrigger()">Soft Skills</a>
             <a routerLink="/hard-skills" (click)="menuService.menuTrigger()">Hard Skills</a>
         </div>
         <div class="box_buttons">
             <a routerLink="/projects" (click)="menuService.menuTrigger()">Projects</a>
-        </div> -->
-        <!-- <p>Download</p>
+        </div>
+        <p>Download</p>
         <div id="cv-menu-links">
             <p> ▸ <a target="_blank" href="../../../../../assets/curriculum_vitae/cv_tony_en.pdf">CV Tony *.pdf ( English )</a></p>
             <p> ▸ <a target="_blank" href="../../../../../assets/curriculum_vitae/cv_tony_fr.pdf">CV Tony *.pdf ( Français )</a></p>  
-        </div> -->
+        </div>
     </div>
 </div>
 
