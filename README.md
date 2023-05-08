@@ -6,4 +6,4 @@
 https://cv.flyingpad.be. Feel free to take a look !
 
 
- - Project generated with [Angular CLI] version 15.1.4.
+ - Project generated with Angular CLI version 15.1.4.
